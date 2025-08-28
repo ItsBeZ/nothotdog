@@ -29,41 +29,30 @@ Upload an image to see the prediction.
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/<YourUsername>/nothotdog.git
 cd nothotdog
+
 2. Create a virtual environment
-cmd
-Copy code
 python -m venv .venv
 .venv\Scripts\activate
+
 3. Install required packages
-c
-Copy code
 pip install flask python-dotenv requests
+
 4. Create a .env file
 Copy .env.example to .env:
-
-cmd
-Copy code
 copy .env.example .env
-Add your Hugging Face API key:
 
-ini
-Copy code
+Add your Hugging Face API key:
 HUGGING_FACE_API_URL=https://api-inference.huggingface.co/models/julien-c/hotdog-not-hotdog
 HUGGING_FACE_API_KEY=your_hugging_face_api_key_here
 Important: Do not push .env to GitHub. The .gitignore already prevents this.
 
 5. Run the app
-c
-Copy code
 python web.py
 Open your browser at http://127.0.0.1:5000/ and start testing!
 
-File Structure
-bash
-Copy code
+File Structure:
 nothotdog/
 │
 ├── web.py              # Flask server code
