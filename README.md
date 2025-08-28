@@ -21,9 +21,6 @@ After running locally, open your browser at:
 
 http://127.0.0.1:5000/
 
-yaml
-Copy code
-
 Upload an image to see the prediction.
 
 ---
